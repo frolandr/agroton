@@ -2926,11 +2926,23 @@ a {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .burger__label span,
+  .burger__label::after,
+  .burger__label::before {
+    background: rgb(14, 13, 13);
+  }
+
+  .products__item:nth-child(2n) {
+    color: blue;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .burger__label span,
   .burger__label::after,
   .burger__label::before {
-    background: rgb(242, 165, 49);
+    background: rgb(255, 255, 255);
   }
 
   .products__item:nth-child(2n) {
@@ -2938,9 +2950,11 @@ a {
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: no-preference) {
+  /* Styles */
+
   .products__item:nth-child(2n) {
-    color: rgb(14, 13, 13);
+    color: red;
   }
 }
 

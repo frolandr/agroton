@@ -461,7 +461,7 @@ select {
 body {
   min-width: 320px;
   height: 100%;
-  background: rgb(253, 253, 240) !important;
+  background: rgb(253, 253, 240);
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1465,6 +1465,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -2932,6 +2936,11 @@ a {
   .burger__label::after,
   .burger__label::before {
     background: rgb(242, 165, 49);
+  }
+
+  .products__item:nth-child(2n) .products__header,
+  .products__item:nth-child(2n) .products__txt {
+    color: rgb(14, 13, 13);
   }
 }
 

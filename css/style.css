@@ -2940,7 +2940,7 @@ a {
 
   .products__item:nth-child(2n) .products__header,
   .products__item:nth-child(2n) .products__txt {
-    color: rgb(14, 13, 13);
+    color: rgb(14, 13, 13) !important;
   }
 }
 

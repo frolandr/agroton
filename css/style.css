@@ -620,6 +620,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*================================== LOGO ===================================*/
@@ -646,7 +650,7 @@ a {
   font-size: 22px;
   line-height: normal;
   text-transform: uppercase;
-  color: #0e0d0d;
+  color: rgb(14, 13, 13);
 }
 
 .logo__txt--footer {
@@ -682,6 +686,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -766,6 +774,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -887,6 +899,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*================================ OVERLAY ==================================*/
@@ -952,6 +968,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -1094,6 +1114,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*=============================== ADVANTAGES =================================*/
@@ -1213,6 +1237,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*============================== MANAFACTURER ===============================*/
@@ -1293,7 +1321,7 @@ a {
 }
 
 .manufacturer__row:nth-child(1) {
-  border-top: 1px solid rgba(14, 13, 13, 0.23);
+  border-top: 1px solid;
 }
 
 .manufacturer__table td {
@@ -1348,6 +1376,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -1525,6 +1557,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*================================ PARTNERS =================================*/
@@ -1696,6 +1732,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*================================== BLOG ===================================*/
@@ -1853,6 +1893,10 @@ a {
 
 /*---------------------------- max-width: 0479px ----------------------------*/
 
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
+
 /*===========================================================================*/
 
 /*================================= FOOTER ==================================*/
@@ -1941,6 +1985,10 @@ a {
 /*---------------------------------------------------------------------------*/
 
 /*---------------------------- max-width: 0479px ----------------------------*/
+
+/*---------------------------------------------------------------------------*/
+
+/*----------------------- prefers-color-scheme: dark ------------------------*/
 
 /*===========================================================================*/
 
@@ -2926,27 +2974,242 @@ a {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .burger__label span,
-  .burger__label::after,
-  .burger__label::before {
-    background: rgb(14, 13, 13);
-  }
-
-  .products__item:nth-child(2n) {
-    color: blue;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(2, 2, 15);
+    color: rgb(241, 242, 242);
+  }
+
+  .logo__txt {
+    color: rgb(241, 242, 242);
+  }
+
+  .logo__txt--footer {
+    color: rgb(0, 0, 0);
+  }
+
   .burger__label span,
   .burger__label::after,
   .burger__label::before {
-    background: rgb(255, 255, 255);
+    background: rgb(241, 242, 242);
+  }
+
+  .menu__item {
+    color: rgb(241, 242, 242);
+  }
+
+  .button {
+    background-color: rgb(241, 242, 242);
+    color: rgb(0, 0, 0);
+    /* -------------------------------- *
+
+
+    /* ------ Для псевдоклассов ------ */
+  }
+
+  .button:hover {
+    background-color: rgb(153, 143, 122);
+  }
+
+  .about__cart {
+    background-color: rgb(11, 11, 24);
+  }
+
+  .about__header {
+    color: rgb(255, 255, 255);
+  }
+
+  .about__descr {
+    color: rgb(255, 255, 255);
+  }
+
+  .about__cart:hover {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(221, 195, 175, 0.6);
+            box-shadow: 4px 4px 8px 0px rgba(221, 195, 175, 0.6);
+  }
+
+  .advantages__list {
+    background-color: rgb(11, 11, 24);
+  }
+
+  .advantages dt {
+    color: rgb(255, 255, 255);
+  }
+
+  .advantages dl {
+    color: rgb(241, 242, 242);
+  }
+
+  .manufacturer__desc {
+    color: rgb(241, 242, 242);
+  }
+
+  .manufacturer__desc-bold {
+    color: rgb(241, 242, 242);
+  }
+
+  .manufacturer__row {
+    border-bottom: 1px solid rgba(241, 242, 242, 0.23);
+  }
+
+  .manufacturer__row:nth-child(1) {
+    border-top: 1px solid rgba(241, 242, 242, 0.23);
+  }
+
+  .manufacturer__table td {
+    color: rgb(241, 242, 242);
   }
 
   .products__item:nth-child(2n) {
     color: rgb(242, 165, 49);
+  }
+
+  .partners__desc {
+    max-width: 565px;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(14, 13, 13);
+  }
+
+  .partners__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 720px;
+  }
+
+  .partners__right-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgb(244, 244, 231);
+    border-radius: 10px 20px 20px 10px;
+  }
+
+  .partners__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0 30px 20px;
+    border-radius: 10px;
+  }
+
+  .partners__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 16px;
+    width: 341px;
+  }
+
+  .partners__item {
+    position: relative;
+    padding-left: 39px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: rgb(0, 0, 0);
+  }
+
+  .partners__span-orange {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgb(242, 165, 49);
+  }
+
+  .partners__item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 10px;
+    width: 7px;
+    height: 7px;
+    background-image: url("../img/arrow.svg");
+    background-size: 7px 7px;
+    background-repeat: no-repeat;
+  }
+
+  .partners__img {
+    width: 340px;
+    height: 364px;
+    border-radius: 20px;
+  }
+
+  .partners__txt {
+    padding: 30px 82px 30px 30px;
+    background-color: #0d1615;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+  }
+
+  .partners__txt-orange {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    color: rgb(242, 165, 49);
+  }
+
+  .blog__inner {
+    background-color: rgb(11, 11, 24);
+  }
+
+  .blog__header {
+    color: rgb(241, 242, 242);
+  }
+
+  .blog__txt {
+    color: rgb(153, 143, 122);
+  }
+
+  .footer {
+    background-color: rgb(241, 242, 242);
+    color: rgb(0, 0, 0);
+  }
+
+  .footer__list {
+    color: rgb(0, 0, 0);
+  }
+
+  .footer__autors {
+    border-top: 1px solid rgb(0, 0, 0);
+  }
+
+  .footer__txt {
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -2955,6 +3218,12 @@ a {
 
   .products__item:nth-child(2n) {
     color: red;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .products__item:nth-child(2n) {
+    color: blue;
   }
 }
 

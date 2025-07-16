@@ -2938,6 +2938,12 @@ a {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .products__item:nth-child(2n) {
+    color: rgb(14, 13, 13);
+  }
+}
+
 .webp .about__inner{ background-image: url(../img/about.webp); }
 
 .webp .quality{ background-image: url(../img/quality.webp); }

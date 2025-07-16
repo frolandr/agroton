@@ -1426,8 +1426,7 @@ a {
   color: rgb(255, 255, 255);
 }
 
-.products__item:nth-child(2n) .products__header,
-.products__item:nth-child(2n) .products__txt {
+.products__item:nth-child(2n) {
   color: rgb(14, 13, 13);
 }
 
@@ -2938,9 +2937,8 @@ a {
     background: rgb(242, 165, 49);
   }
 
-  .products__item:nth-child(2n) .products__header,
-  .products__item:nth-child(2n) .products__txt {
-    color: #000;
+  .products__item:nth-child(2n) {
+    color: rgb(242, 165, 49);
   }
 }
 
